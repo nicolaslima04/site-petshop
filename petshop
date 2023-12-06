@@ -1,0 +1,338 @@
+---------------------------------------------------------- INDEX.HTML ------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pet Shop</title>
+</head>
+<body>
+    <header>
+        <h1>Pet Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Produtos</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div style="position: relative; width: 100%; height: 0; padding-top: 14.2857%;
+        padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+        border-radius: 8px; will-change: transform;">
+         <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+           src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFw6FWBBbw&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+         </iframe>
+       </div>
+       <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFw6FWBBbw&#x2F;view?utm_content=DAFw6FWBBbw&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> 
+        <section class="banner">
+            <h2>Bem-vindo ao Pet Shop!</h2>
+            <p>Encontre os melhores produtos e cuidados para os seus animais de estimação.</p>
+        </section>
+
+        <section class="about-us">
+            <h2>Quem Somos</h2>
+            <p>O Pet Shop é o lugar ideal para todos os amantes de animais. Nosso compromisso é oferecer produtos de alta qualidade, desde alimentos nutritivos até acessórios que fazem a diferença na vida do seu pet.</p>
+            <p>Em nosso pet shop, valorizamos a saúde, o bem-estar e a felicidade dos seus animais. Nossa equipe dedicada está aqui para ajudar a encontrar os produtos certos para atender às necessidades individuais de cada pet, seja ele um cachorro, gato, pássaro ou roedor.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pet Shop. Todos os direitos reservados.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
+ -------------------------------------------------------------------- PRODUCTS.HTML -------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Produtos - Pet Shop</title>
+</head>
+<body>
+    <header>
+        <h1>Pet Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Produtos</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li class="cart-icon"><a href="cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/></svg></a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2>Nossos Produtos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Imagem</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ração para Cães</td>
+                        <td>R$ 29.99</td>
+                        <td><img src="https://imgs.casasbahia.com.br/1523141746/1xg.jpg" alt="Ração para Cães"></td>
+                        <td><button class="add-to-cart" onclick="addToCart('Ração para Cães', 29.99)">Adicionar ao Carrinho</button></td>
+                    </tr>
+                    <tr>
+                        <td>Ração para Gatos</td>
+                        <td>R$ 24.99</td>
+                        <td><img src="https://m.media-amazon.com/images/I/817gNKbLZPL._AC_UF1000,1000_QL80_.jpg" alt="Ração para Gatos"></td>
+                        <td><button class="add-to-cart" onclick="addToCart('Ração para Gatos', 24.99)">Adicionar ao Carrinho</button></td>
+                    </tr>
+                    <tr>
+                        <td>Coleira para Cães</td>
+                        <td>R$ 15.00</td>
+                        <td><img src="https://images.tcdn.com.br/img/img_prod/1023012/coleira_couro_forrado_no_08_vermelho_841_1_6a14abed999df876f28bdbeb6900eb17.jpg" alt="Coleira para Cães"></td>
+                        <td><button class="add-to-cart" onclick="addToCart('Coleira para Cães', 15.00)">Adicionar ao Carrinho</button></td>
+                    </tr>
+                    <tr>
+                        <td>Bolinha de Brinquedo</td>
+                        <td>R$ 9.99</td>
+                        <td><img src="https://m.media-amazon.com/images/I/41DEl3vmZVL._AC_UF1000,1000_QL80_.jpg" alt="Bolinha de Brinquedo"></td>
+                        <td><button class="add-to-cart" onclick="addToCart('Bolinha de Brinquedo', 9.99)">Adicionar ao Carrinho</button></td>
+                    </tr>
+                    <tr>
+                        <td>Aquário para Peixes</td>
+                        <td>R$ 49.99</td>
+                        <td><img src="https://acdn.mitiendanube.com/stores/001/779/334/products/beteira-quadrada1-25c55179bee52de7aa16350982686880-1024-1024.jpg" alt="Aquário para Peixes"></td>
+                        <td><button class="add-to-cart" onclick="addToCart('Aquário para Peixes', 49.99)">Adicionar ao Carrinho</button></td>
+                    </tr>
+                    <!-- Adicione mais linhas conforme necessário -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pet Shop. Todos os direitos reservados.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
+
+------------------------------------------------------------------------CONTACT.HTML----------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contato - Pet Shop</title>
+</head>
+<body>
+    <header>
+        <h1>Pet Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Produtos</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact">
+        <section>
+            <h2>Entre em Contato</h2>
+            <p>Estamos aqui para ajudar. Preencha o formulário abaixo ou nos ligue.</p>
+        </section>
+
+        <section class="contact-form">
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h3>Informações de Contato</h3>
+            <p><strong>Endereço:</strong> Rua Pet, 123 - Cidade dos Animais</p>
+            <p><strong>Telefone:</strong> (11) 1234-5678</p>
+            <p><strong>E-mail:</strong> contato@petshop.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pet Shop. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+-------------------------------------------------------------------------STYLES.CSS------------------------------------------------------------
+
+/* Reset de estilos para garantir consistência em diferentes navegadores */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ff8c00; /* Cor de fundo mais clara para melhor visibilidade */
+    color: #333; /* Cor do texto padrão */
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background-color: #ff8c00;
+    color: #fff; /* Cor do texto no cabeçalho */
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333; /* Cor de fundo mais escura para o menu de navegação */
+    margin-top: 10px; /* Espaçamento superior para o menu */
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Cor do texto nos links de navegação */
+}
+
+main {
+    padding: 20px;
+}
+
+.products {
+    margin-top: 20px; /* Espaçamento superior para a seção de produtos */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px; /* Espaçamento superior para a tabela */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Linha separadora entre as células */
+}
+
+th {
+    background-color: #333; /* Cor de fundo mais escura para os cabeçalhos da tabela */
+    color: #fff; /* Cor do texto nos cabeçalhos da tabela */
+}
+
+.products img {
+    max-width: 80px; /* Defina a largura máxima desejada */
+    height: auto;
+    margin-bottom: 10px
+}
+footer {
+    background-color: #333; /* Cor de fundo mais escura para o rodapé */
+    color: #fff; /* Cor do texto no rodapé */
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ff8c00;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+main.contact {
+    padding: 20px;
+}
+
+.contact section {
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.contact-form button {
+    background-color: #ff8c00;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e07b00;
+}
+
+.contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-icon svg {
+    width: 20px; /* Ajuste o tamanho do ícone do carrinho conforme necessário */
+    fill: #fff; /* Cor do ícone */
+}
+
+-----------------------------------------------------------------------MAIN.JS-------------------------------------------------
+
+// Carrinho de compras
+let cart = [];
+
+function addToCart(productName, price) {
+    cart.push({ productName, price });
+    alert(`${productName} adicionado ao carrinho!`);
+    console.log(cart);
+}
+
+
+
